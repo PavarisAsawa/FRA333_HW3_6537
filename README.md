@@ -39,9 +39,7 @@ Using a geomatric Jacobian
 
 $$
 J_{linear,i} = \hat{Z_i} \times (P_{e}^0 - P_i^0) \\
-
 J_{angular,i} = \hat{Z_i} \\
-
 J = \begin{bmatrix}
 J_{linear} \\
 J_{angular}
