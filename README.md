@@ -36,15 +36,18 @@ Find a Jacobian matrix at end-effector frame relate to base frame
 
 ### Solution
 Using a geomatric Jacobian
+
 $$
 J_{linear,i} = \hat{Z_i} \times (P_{e}^0 - P_i^0) \newline
 
 J_{angular,i} = \hat{Z_i} \newline 
+
 J = \begin{bmatrix}
 J_{linear} \\
 J_{angular}
 \end{bmatrix} \newline
 $$
+
 ```py
   def endEffectorJacobianHW3(q:list[float])->list[float]:
     R,P,R_e,p_e = FKHW3(q)      #   FK for P_0_e - P_0_i to make a Geomatric Jacobian
