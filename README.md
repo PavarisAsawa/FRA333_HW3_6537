@@ -38,14 +38,12 @@ Find a Jacobian matrix at end-effector frame relate to base frame
 Using a geomatric Jacobian
 
 $$
-J_{linear,i} = \hat{Z_i} \times (P_{e}^0 - P_i^0) \newline
-
-J_{angular,i} = \hat{Z_i} \newline 
-
+J_{linear,i} = \hat{Z_i} \times (P_{e}^0 - P_i^0) \\
+J_{angular,i} = \hat{Z_i} \\
 J = \begin{bmatrix}
 J_{linear} \\
 J_{angular}
-\end{bmatrix} \newline
+\end{bmatrix}
 $$
 
 ```py
@@ -109,6 +107,7 @@ $$
 
 ### Solution
 The joint efforts of the manipulator can be calculated using equations derived from the principle of virtual work.
+
 $$
 \tau = J^TW
 $$
@@ -119,7 +118,6 @@ $\tau$  is effort that effect to Manipulator $\mathbb{R}^{3 \times 1}$
 $J^T$   is Transposed Jacobian of Manipulator $\mathbb{R}^{3 \times 6}$
 
 $W$     is Wrench that action to end-effector in base frame $\mathbb{R}^{6 \times 1}$ 
-
 
 ```py
 def computeEffortHW3(q:list[float], w:list[float])->list[float]:
