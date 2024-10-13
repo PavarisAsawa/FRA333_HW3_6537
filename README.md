@@ -164,9 +164,9 @@ $$
 ### Solution
 The joint efforts of the manipulator can be calculated using equations derived from the principle of virtual work.
 
-$$
-\tau = J^TW
-$$
+$$\tau = J^TW$$
+
+
 Define :
 
 $\tau$  is effort that effect to Manipulator $\mathbb{R}^{3 \times 1}$
